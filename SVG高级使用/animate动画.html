@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="500" height="500">
+        <rect x="0" y="0" width="500" height="500" fill="pink">
+            <!-- animate 标签用于产生动画效果 -->
+            <!-- animate 的属性
+                attributeName  发生动画效果的属性名
+                from  单词动画的初始值
+                to  单词动画的结束值
+                dur  单词动画的持续时间
+                repeatCount 动画的循环模式 
+             -->
+            <animate attributeName="x" from="0" to="500" dur="6s" repeatCount="indefinite"></animate>
+            <animate attributeName="y" from="0" to="500" dur="6s" repeatCount="indefinite"></animate>
+        </rect>
+        <!-- 以上效果代表矩形的动画效果 -->
+
+        <!-- animate 标签对css 的transform 属性不起作用，如果需要变形，就要使用<animateTransform> -->
+    </svg>
+</body>
+</html>

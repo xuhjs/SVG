@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="400" height="400">
+        <!-- 线段：x1,y1代表起点坐标，x2,y2代表终点坐标  可以设置直线的颜色和宽度 -->
+        <line x1="50" y1="50" x2="350" y2="350" style="stroke: blue;"></line>
+        <!-- 折线 -->
+        <polyline points="50,100 50,150 80,150" style="stroke: red; stroke-width: 3px; fill: aqua;"/>
+        <!-- 矩形标签 -->
+        <rect x="0" y="0" width="100px" height="100px" style="stroke: green;fill: white;"></rect>
+        <!-- 椭圆标签 -->
+        <ellipse cx="200" cy="200" ry="20" rx="100" style="stroke: black; fill:red"/>
+        <!-- 多边形  根据不同的点绘制出多边形  点与点之间用空格分割开来-->
+        <polygon points="50,50 150,150 150,50"/>
+        <!-- 绘制路径  path有一个属性d d中的M(移动到 moveto)代表起始点 L(lineto 画直线到)代表路径 Z（闭合路径）代表一个闭合的图形-->
+        <path d="M 50,50 ,L 50,60 ,L 50,70 ,L 60,80 ,Z " style="stroke:pink;fill: bisque;"></path>
+        <!-- 绘制文本 -->
+        <text x="200" y="200" style="fill: white;">你好呀</text>
+    </svg>
+</body>
+</html>

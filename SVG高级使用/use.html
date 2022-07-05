@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="500" height="500">
+        <circle id="yuan" cx="100" cy="100" r="50" style="stroke: blue; fill:red"></circle>
+
+        <!-- 复用另一个图形 use标签，使用href属性，引用想要引用的标签即可  位移的坐标相对于复制的元素的左上角位置 并且位移使用x,y值 -->
+        <use href="#yuan" x="100" y="100"></use>
+    </svg>
+</body>
+</html>
